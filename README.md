@@ -46,7 +46,7 @@ Stretch Stories:
 
 4.  Restart your terminal session (close and re-open), to update PHP, Composer, and the Laravel installer, just re-run the above command
 
-5.  Navigate to the app directory in the console
+5.  Navigate to the app directory in the terminal
 
         cd to/the/dir/of/the/Job-Board-Application
 
