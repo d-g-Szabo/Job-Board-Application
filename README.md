@@ -40,15 +40,15 @@ Stretch Stories:
 
 3. In addition, you should install Node (24.5.0) and NPM (11.5.1) (https://laravel.com/docs/12.x/installation#creating-a-laravel-project)
 
-For linux use this command:
-/bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.4)"
+- For linux to install PHP, Composer, and the Laravel installer, use this command:
+  /bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.4)"
 
-4.  Restart your terminal session, to update just re-run the command
+4.  Restart your terminal session (close and re-open), to update PHP, Composer, and the Laravel installer, just re-run the above command
 
-5.      cd to/the/dir/of/the/Job-Board-Application
+5.  cd to/the/dir/of/the/Job-Board-Application
 
         npm install && npm run build
 
-        composer run dev // This is how you start the development server
+    composer run dev // This is how you start the development server
 
 6.  Open http://localhost:8000 and http://localhost:5173/
