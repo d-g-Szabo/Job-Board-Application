@@ -45,10 +45,11 @@ Stretch Stories:
 
 4.  Restart your terminal session (close and re-open), to update PHP, Composer, and the Laravel installer, just re-run the above command
 
-5.  cd to/the/dir/of/the/Job-Board-Application
-
-        npm install && npm run build
-
-    composer run dev // This is how you start the development server
+5.  Navigate to the app directory in the console
+    cd to/the/dir/of/the/Job-Board-Application
+    Install packages and make a build
+    npm install && npm run build
+    Start the development server
+    composer run dev
 
 6.  Open http://localhost:8000 and http://localhost:5173/
