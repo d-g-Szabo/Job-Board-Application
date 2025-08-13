@@ -53,6 +53,9 @@ Stretch Stories:
     Install packages and make a build
 
         npm install && npm run build
+        composer install
+
+    Create a new .env file from the .env.example and set up your DB
 
     Start the development server
 
