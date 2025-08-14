@@ -5,12 +5,19 @@ Project: Build a job board web app using Laravel, Vue, PHP
 # Requirements:
 
 🎯 Authentication, Register/login/logout.
+
 🎯 User Roles, Job Seeker and Employers.
+
 🏹 Job Listings, View job list and job detail pages
+
 🏹 Job Application System, Cover letter, Optional resume/CV (PDF)
+
 🏹 File Upload, uploaded CVs
+
 🏹 Job Expiration, job expire based on the expires_at field.
+
 🏹 Search & Filtering, Search/filter by keyword, type, location
+
 🏹 Employer Dashboard
 
 I did not manage to finish all the requirements.
@@ -42,13 +49,16 @@ Stretch Stories:
 
 # Trello project planning:
 
-![](https://github.com/d-g-Szabo/Job-Board-Application/blob/434c58a6f939b105e7a92fe3be0999eb1df8bb51/public/trello.png)
+![](https://github.com/d-g-Szabo/Job-Board-Application/blob/b70dc74f018ef8ad1ad152a0f0f68cfa8de5e82a/public/trello.png)
 
 # Stretch Goals:
 
 🏹 OAuth sign-in
+
 🏹 Application status
+
 🏹 Notification system
+
 🏹 Admin user with deshboard
 
 <!-- # Reflections:
@@ -83,7 +93,9 @@ Stretch Stories:
         composer install
 
 6.  Create a new .env file from the .env.example and set up your DB
+
     I used Supabase PostreSQL: https://supabase.com/docs/guides/getting-started/quickstarts/laravel
+
     (Make sure the APP_KEY is correct in the .env!)
 
     Start the development server
