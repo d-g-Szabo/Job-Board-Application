@@ -4,17 +4,37 @@ Project: Build a job board web app using Laravel, Vue, PHP
 
 # Requirements:
 
-🎯
+🎯 Authentication, Register/login/logout.
+🎯 User Roles, Job Seeker and Employers.
+🏹 Job Listings, View job list and job detail pages
+🏹 Job Application System, Cover letter, Optional resume/CV (PDF)
+🏹 File Upload, uploaded CVs
+🏹 Job Expiration, job expire based on the expires_at field.
+🏹 Search & Filtering, Search/filter by keyword, type, location
+🏹 Employer Dashboard
+
+I did not manage to finish all the requirements.
 
 # User Stories:
 
-    🐿️
+    🐿️ As a user, I want to register, log in, and log out so that I can access role-specific features
+    🐿️ As a user, I want to see a list of all active job listings so that I can browse opportunities.
+    🐿️ As a user, I want to open a job detail page so that I can read the full description and requirements.
+    🐿️ As a job seeker, I want to apply to a job with a cover letter and an optional CV upload so that I can present my candidacy.
+    🐿️ As a employer, I want to post a new job with title, company name, location, job type, description, optional salary range, tags, and an expiration date so that candidates have all key information
+    🐿️ As a employer, I want to edit or delete my own job posts so that I can keep listings accurate.
+    🐿️ As a employer, I want expired jobs to remain visible in my dashboard (but hidden from the public) so that I can decide to extend or repost them
+    🐿️ As a job seeker, I want to view a list of jobs I’ve applied to so that I can track my submissions
+    🐿️ As a employer, I want to view each job’s applicants (name, email, message/cover letter, optional CV) so that I can evaluate candidates
 
 Stretch Stories:
 
-    🐿️
+    🐿️ As a admin, I want to moderate job listings and manage users so that I can remove spam and maintain quality
+    🐿️ As a user, I want email notifications (application received/updated, new applicant, job expiring soon) so that I stay informed without logging in
+    🐿️ As a job seeker, I want to track my application status (received, reviewed, shortlisted, rejected) so that I know where I stand
+    🐿️ As a user, I want OAuth sign-in (Google/GitHub) and optional 2FA so that authentication is convenient and secure
 
-# Wireframe:
+<!-- # Wireframe: -->
 
 # Database schema:
 
@@ -22,17 +42,22 @@ Stretch Stories:
 
 # Trello project planning:
 
+![](https://github.com/d-g-Szabo/Job-Board-Application/blob/434c58a6f939b105e7a92fe3be0999eb1df8bb51/public/trello.png)
+
 # Stretch Goals:
 
-🏹
+🏹 OAuth sign-in
+🏹 Application status
+🏹 Notification system
+🏹 Admin user with deshboard
 
-# Reflections:
+<!-- # Reflections:
 
 - What went really well, and what could have gone better?
 
 - Useful external sources that helped me complete the assignment (e.g Youtube tutorials).
 
-- Errors or bugs I encountered while completing your assignment.
+- Errors or bugs I encountered while completing your assignment. -->
 
 # Setup instructions:
 
