@@ -4,8 +4,75 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b69c7a6419170e02b2a078b6c41fceee",
+    "content-hash": "38a50fe0350f06c98ce801c0e5a3591d",
     "packages": [
+        {
+            "name": "belamov/postgres-range",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/belamov/postgres-range.git",
+                "reference": "a6b1d3323fe00793214f5cf20a8bb9d866f0dc20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/belamov/postgres-range/zipball/a6b1d3323fe00793214f5cf20a8bb9d866f0dc20",
+                "reference": "a6b1d3323fe00793214f5cf20a8bb9d866f0dc20",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "nesbot/carbon": "^2.16|^3.0",
+                "php": "^8.0|^7.4"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^9.0|^10.0|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Belamov\\PostgresRange\\PostgresRangeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Belamov\\PostgresRange\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "belamov",
+                    "email": "business@belamov.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Postgres range types support for laravel",
+            "homepage": "https://github.com/belamov/postgres-range",
+            "keywords": [
+                "daterange",
+                "int4range",
+                "int8range",
+                "laravel",
+                "numrange",
+                "package",
+                "postgres",
+                "postgres-range",
+                "timerange",
+                "tsrange"
+            ],
+            "support": {
+                "issues": "https://github.com/belamov/postgres-range/issues",
+                "source": "https://github.com/belamov/postgres-range/tree/1.3.0"
+            },
+            "time": "2025-03-30T07:31:21+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.13.1",
