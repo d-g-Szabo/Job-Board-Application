@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('job_listings', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->constrained()->onDelete('cascade');
+            // $table->unsignedBigInteger('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->string('title', 255);
             $table->string('company_name', 255);
             $table->string('job_type', 20);
