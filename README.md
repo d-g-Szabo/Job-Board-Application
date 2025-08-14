@@ -82,10 +82,12 @@ Stretch Stories:
         npm install && npm run build
         composer install
 
-    Create a new .env file from the .env.example and set up your DB
+6.  Create a new .env file from the .env.example and set up your DB
+    I used Supabase PostreSQL: https://supabase.com/docs/guides/getting-started/quickstarts/laravel
+    (Make sure the APP_KEY is correct in the .env!)
 
     Start the development server
 
         composer run dev
 
-6.  Open http://localhost:8000 and http://localhost:5173/
+7.  Open http://localhost:8000 and http://localhost:5173/
