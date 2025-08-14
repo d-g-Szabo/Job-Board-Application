@@ -18,6 +18,8 @@ Stretch Stories:
 
 # Database schema:
 
+![](https://github.com/d-g-Szabo/Job-Board-Application/blob/434c58a6f939b105e7a92fe3be0999eb1df8bb51/public/job_listing_webapp_db_schema.png)
+
 # Trello project planning:
 
 # Stretch Goals:
