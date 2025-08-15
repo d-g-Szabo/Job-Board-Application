@@ -28,21 +28,19 @@ class DatabaseSeeder extends Seeder
 
         // If the user is Employer, create job listings
 
-        User::factory(20)->create()->each(function (User $user) {
-            // debug console log
-            \Log::debug('Created user: ' . $user->id);
+        $tags = Tag::factory(10)->create();
+
+        User::factory(20)->create()->each(function (User $user) use($tags) {
             if ($user->role === 'employer') {
-                // job_listings::factory(rand(1, 4))->create([
-                //     'user_id' => $user->id,
-                //     'salary_range' => rand(50000, 80000) . ' - ' . rand(100000, 150000),
-                // ]);
                 $minSalary = rand(50000, 80000);
                 $maxSalary = rand(100000, 150000);
         
                 job_listings::factory(rand(1, 4))->create([
                     'user_id' => $user->id,
                     'salary_range' => new IntegerRange($minSalary, $maxSalary),
-                ]);
+                ])->each(function (job_listings $job) use($tags) {
+                    $job->tag()->attach($tags->random(rand(1, max: 3)));
+                });
             }
         });
     }
