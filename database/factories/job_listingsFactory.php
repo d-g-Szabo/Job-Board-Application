@@ -16,14 +16,19 @@ class Job_ListingsFactory extends Factory
      */
     public function definition(): array
     {
+
+        $description = '';
+        for ($i=0; $i < 5; $i++) { 
+            $description .= '<p class="mb-4">' . fake()->paragraph(rand(5, 10), true) . "</p>\n";
+        }
+
         return [
             'title' => fake()->jobTitle(),
             'company_name' => fake()->company(),
             'job_type' => fake()->randomElement(['full_time', 'part_time', 'contract']),
             'location' => fake()->city(),
             'description' => fake()->paragraph(),
-            'salary_range' => fake()->numberBetween(50000, 150000),
-            'expires_at' => fake()->dateTimeBetween('+1 week', '+1 month'),
+            'expires_at' => fake()->dateTimeBetween('-1 week', '+1 month'),
         ];
     }
 }
