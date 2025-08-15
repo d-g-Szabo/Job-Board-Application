@@ -9,10 +9,9 @@ class ListingController extends Controller
 {
     public function index(){
         $jobListings = job_listings::where('job_type', 'full_time')
-            ->with('tags')
+            ->with('tag')
             ->latest()
             ->get();
-        return $jobListings;
         return view('jobListings.index', compact('jobListings'));
     }
 }
