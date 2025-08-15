@@ -5,10 +5,10 @@ use Inertia\Inertia;
 use App\Http\Middleware\EnsureUserHasRole;
 use App\Http\Controllers;
 
-// Route::get('/', function () {
-//     return Inertia::render('Welcome');
-// })->name('home');
-Route::get("/", [Controllers\ListingController::class,"index"])->name("jobListings.index");
+Route::get('/', function () {
+    return Inertia::render('Welcome');
+})->name('home');
+// Route::get("/", [Controllers\ListingController::class,"index"])->name("jobListings.index");
 
 Route::get('dashboard', function () {
 
