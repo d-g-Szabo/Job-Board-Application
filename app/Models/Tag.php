@@ -13,6 +13,9 @@ class Tag extends Model
 
     public function jobListings()
     {
-        return $this->belongsToMany(job_listings::class);
+        return $this->belongsToMany(job_listings::class,
+        'job_listings_tag',
+        'tag_id',
+        'job_listings_id');
     }
 }
